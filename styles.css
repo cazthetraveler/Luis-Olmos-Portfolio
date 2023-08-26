@@ -1,0 +1,89 @@
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:white;
+    width: 250px;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategray;
+    width: 100%;
+    text-align: center;
+    margin: 25px 0px;
+    padding: 10px 0px;
+    font-size: 30px;
+    transition: 0.3s;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: darkslategray;
+    color: white;
+    transition: 0.3s;
+}
+
+main {
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(45deg, deeppink, purple);
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#title {
+    color: white;
+    align-self: center;
+}
+
+#title h1 {
+    text-align: right;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+#title h2 {
+    text-align: right;
+    font-size: 50px;
+}
+
+#main-image img {
+    height: 100vh;
+    width: 100%;
+}
+
+#about-me {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#work {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
