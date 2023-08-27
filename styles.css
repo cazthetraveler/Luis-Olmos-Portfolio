@@ -1,3 +1,7 @@
+:root {
+    --darkmagenta: #8B008B;
+}
+
 nav {
     position: fixed;
     display: flex;
@@ -65,7 +69,8 @@ header {
 
 #about-me, #work, #contact {
     width: 100%;
-    margin-bottom: 30px;
+    padding: 15px;
+    margin-bottom: 50px;
 }
 
 .projects {
@@ -81,8 +86,12 @@ header {
     height: 500px;
     position: relative;
     text-align: center;
-    border: 5px solid deepskyblue;
+    border: 5px solid var(--darkmagenta);
     transition: 0.3s;
+}
+
+.main {
+    width: 95%;
 }
 
 h4 {
@@ -95,7 +104,7 @@ h4 {
 }
 
 .card:hover {
-    box-shadow: 0px 0px 15px deepskyblue;
+    box-shadow: 0px 0px 15px var(--darkmagenta);
     transition: 0.3s;
 }
 
@@ -115,21 +124,103 @@ h4 {
     color: black;
 }
 
-.contact-info p {
-    padding-bottom: 5px;
-    border-bottom: 5px solid deepskyblue;
+.contact-info a:hover {
+    color: var(--darkmagenta);
 }
 
-.main {
-    width: 95%;
+.contact-info p {
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--darkmagenta);
 }
 
 h3 {
     text-align: center;
     font-size: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 p {
     font-size: 20px;
 }
+
+@media screen and (max-width:768px) {
+    nav {
+        width: 100vw;
+        height: 45px;
+        flex-direction: row;
+        z-index: 2;
+        background-color: darkslategrey;
+        top:0;
+    }
+
+    nav a {
+        font-size: 20px;
+        color: white;
+    }
+
+    nav a:hover {
+        color: darkslategray;
+        background-color: white;
+    }
+
+    main {
+        margin-top: 45px;
+        margin-left: 0px;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 95vh;
+    }
+
+    #title h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    #title h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #main-image {
+        text-align: center;
+    }
+
+    #main-image img {
+        height: 70vh;
+        width: 70%;
+    }
+}
+
+/*header {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(45deg, deeppink, purple);
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#title {
+    color: white;
+    align-self: center;
+}
+
+#title h1 {
+    text-align: right;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+#title h2 {
+    text-align: right;
+    font-size: 50px;
+}
+
+#main-image img {
+    height: 100vh;
+    width: 100%;
+}*/
