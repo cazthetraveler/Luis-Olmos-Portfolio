@@ -143,6 +143,8 @@ p {
     font-size: 20px;
 }
 
+/* MEDIA QUERY */
+
 @media screen and (max-width:768px) {
     nav {
         width: 100vw;
@@ -170,8 +172,9 @@ p {
 
     header {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 95vh;
+        margin-bottom: 45px;
     }
 
     #title h1 {
@@ -193,34 +196,27 @@ p {
         height: 70vh;
         width: 70%;
     }
-}
 
-/*header {
-    display: flex;
-    justify-content: space-around;
-    background-image: linear-gradient(45deg, deeppink, purple);
-    height: 100vh;
-    width: 100%;
-    margin-bottom: 20px;
-}
+    .card {
+        height: 250px;
+        width: 80%;
+    }
 
-#title {
-    color: white;
-    align-self: center;
-}
+    .main {
+        width: 90%;
+        height: 350px;
+    }
 
-#title h1 {
-    text-align: right;
-    font-size: 100px;
-    margin-bottom: 30px;
-}
+    .card img {
+        height: 250px;
+    }
 
-#title h2 {
-    text-align: right;
-    font-size: 50px;
-}
+    .main img {
+        height: 350px;
+    }
 
-#main-image img {
-    height: 100vh;
-    width: 100%;
-}*/
+    h4 {
+        font-size: 30px;
+    }
+
+}
