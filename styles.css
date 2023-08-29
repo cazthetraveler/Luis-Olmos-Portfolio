@@ -219,4 +219,14 @@ p {
         font-size: 30px;
     }
 
+    .contact-info {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact-info p {
+        text-align: center;
+        padding: 15px;
+    }
+
 }
