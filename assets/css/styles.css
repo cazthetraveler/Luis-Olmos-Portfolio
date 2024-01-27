@@ -1,246 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto&family=Roboto+Condensed&display=swap");
 
 :root {
-    --black: #1c1c1c;
-    --white: #f2f2f2;
-    --purple: #ca1f7b;
-    --yellow: #ffce00;
+  --black: #1c1c1c;
+  --white: #f2f2f2;
+  --purple: #ca1f7b;
+  --yellow: #ffce00;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: var(--black);
+  text-decoration: none;
+  color: var(--black);
 }
 
 /* header and nav stuff */
 
 header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 5rem;
-    background-color: white;
-    margin-bottom: 3rem;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
-    z-index: 99;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  background-color: white;
+  margin-bottom: 3rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+  z-index: 99;
 }
 
 nav ul li {
-    display: inline;
-    font-size: 1.25rem;
-    margin: 0 .35rem;
+  display: inline;
+  font-size: 1.25rem;
+  margin: 0 0.35rem;
 }
 
 nav ul li a {
-    color: var(--black);
-    font-family: "Roboto Condensed", sans-serif;
-    transition: 0.3s;
+  color: var(--black);
+  font-family: "Roboto Condensed", sans-serif;
+  transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: var(--purple);
-    transition: 0.3s;
+  color: var(--purple);
+  transition: 0.3s;
 }
 
 #name h1 {
-    font-family: "Crimson Pro", serif;
-    font-size: 3rem;
+  font-family: "Crimson Pro", serif;
+  font-size: 3rem;
 }
 
 .social a {
-    font-size: 1.5rem;
-    color: var(--black);
-    margin: 0 .25rem;
-    transition: 0.3s;
+  font-size: 1.5rem;
+  color: var(--black);
+  margin: 0 0.25rem;
+  transition: 0.3s;
 }
 
 .social a:hover {
-    color: var(--purple);
-    transition: 0.3s;
+  color: var(--purple);
+  transition: 0.3s;
 }
 
 .mob-nav {
-    display: none;
+  display: none;
 }
 
-#nav-btn, #nav-close {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
+#nav-btn,
+#nav-close {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 /* about me section */
 
+.picture img {
+  object-fit: cover;
+  object-position: center;
+  height: 500px;
+  width: 500px;
+  border-radius: 1rem;
+}
+
 #about-me {
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
 #about-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 800px;
 }
 
 .heading {
-    text-align: right;
+  text-align: right;
 }
 
 .heading h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 3.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.5rem;
 }
 
 .heading h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 3rem;
-    margin-bottom: 3rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .paragraphs {
-    width: 90%;
+  width: 90%;
 }
 
 .paragraphs p {
-    font-family: "Roboto", sans-serif;
-    text-indent: 3rem;
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  text-indent: 3rem;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
 }
 
 /* experience section */
 
 #experience {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
 }
 
 .exp-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #experience h2 {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .exp {
-    margin: 0 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.exp h3, .exp ul li {
-    font-family: "Roboto", sans-serif;
+.exp h3,
+.exp ul li {
+  font-family: "Roboto", sans-serif;
 }
 
 .exp h3 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .exp i {
-    border-radius: 50%;
-    padding: 3rem;
-    font-size: 7rem;
-    background-color: var(--yellow);
-    margin-bottom: 2rem;
+  border-radius: 50%;
+  padding: 3rem;
+  font-size: 7rem;
+  background-color: var(--yellow);
+  margin-bottom: 2rem;
 }
 
 .code i {
-    padding: 3rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .work-experience {
-    margin-top: 2rem;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.25rem;
-    font-weight: bold;
-    font-style: italic;
-    color: var(--black);
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--black);
 }
 
 /* works section */
 
-#graphic-design, #photography, #web-dev {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
+#graphic-design,
+#photography,
+#web-dev {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
 }
 
-#graphic-design h2, #photography h2, #web-dev h2, #experience h2 {
-    font-size: 2.75rem;
-    margin-bottom: 2rem;
-    font-family: "Roboto", sans-serif;
+#graphic-design h2,
+#photography h2,
+#web-dev h2,
+#experience h2 {
+  font-size: 2.75rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .grid {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 800px;
-    padding: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 800px;
+  padding: 1rem;
 }
 
 .grid-item {
-    width: 250px;
-    height: 250px;
-    position: relative;
-    background-color: gray;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 250px;
+  position: relative;
+  background-color: gray;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .grid-item img {
-    display: block;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    object-position: 0 50;
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 0 50;
 }
 
 .grid-content {
-    position: absolute;
-    background-color: var(--yellow);
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.3s;
+  position: absolute;
+  background-color: var(--yellow);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s;
 }
 
 .grid-content h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 2rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .grid-item:hover .grid-content {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* footer */
@@ -253,140 +268,143 @@ nav ul li a:hover {
 } */
 
 footer {
-    text-align: center;
-    font-family: monospace;
-    background-color: var(--black);
-    color: var(--white);
-    padding: 2rem;
-    font-size: 1rem;
+  text-align: center;
+  font-family: monospace;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 2rem;
+  font-size: 1rem;
 }
 
 footer a {
-    font-family: monospace;
-    color: var(--purple);
+  font-family: monospace;
+  color: var(--purple);
 }
 
 footer a:hover {
-    color: var(--white);
+  color: var(--white);
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
 
-    body {
-        background-color: white;
-    }
+  /* header and nav stuff */
+  header {
+    margin: 0;
+    padding: 1rem;
+    justify-content: space-between;
+    text-align: center;
+  }
 
-    /* header and nav stuff */
-    header {
-        margin: 0;
-        padding: 1rem;
-        justify-content: space-between;
-        text-align: center;
-    }
+  nav,
+  .social {
+    display: none;
+  }
 
-    nav, .social {
-        display: none;
-    }
+  .mob-nav {
+    display: block;
+  }
 
-    .mob-nav {
-        display: block;
-    }
+  #nav-close {
+    display: none;
+  }
 
-    #nav-close {
-        display: none;
-    }
+  .fa-bars,
+  .fa-xmark {
+    font-size: 1.8rem;
+  }
 
-    .fa-bars, .fa-xmark {
-        font-size: 1.8rem;
-    }
-    
-    .fa-xmark {
-        margin-bottom: 2rem;
-        transition: 0.3s;
-    }
-    
-    .fa-xmark:hover {
-        color: var(--purple);
-        transition: 0.3s;
-    }
+  .fa-xmark {
+    margin-bottom: 2rem;
+    transition: 0.3s;
+  }
 
-    nav ul li {
-        margin-bottom: 1rem;
-        font-size: 2rem;
-    }
+  .fa-xmark:hover {
+    color: var(--purple);
+    transition: 0.3s;
+  }
 
-    /* about me section */
+  nav ul li {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
 
-    #about-me {
-        flex-direction: column;
-        align-items: center;
-    }
+  /* about me section */
 
-    .picture img {
-        height: 250px;
-        width: 250px;
-        object-fit: cover;
-        border-radius: 50%;
-        /* object-position: change it so that it aligns to my face when i eventually add my photo */
-    }
+  #about-me {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #about-info {
-        width: 345px;
-    }
+  .picture img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* object-position: change it so that it aligns to my face when i eventually add my photo */
+  }
 
-    .heading h2 {
-        font-size: 2.5rem;
-    }
+  #about-info {
+    width: 345px;
+  }
 
-    .heading h3 {
-        font-size: 2rem;
-    }
+  .heading h2 {
+    font-size: 2.5rem;
+  }
 
-    .paragraphs {
-        width: 100%;
-    }
+  .heading h3 {
+    font-size: 2rem;
+  }
 
-    .paragraphs p {
-        font-size: 1.5rem;
-    }
+  .paragraphs {
+    width: 100%;
+  }
 
-    /* experience section */
+  .paragraphs p {
+    font-size: 1.5rem;
+  }
 
-    .exp-container {
-        flex-direction: column;
-    }
+  /* experience section */
 
-    .exp {
-        margin: 2.5rem 0;
-    }
+  .exp-container {
+    flex-direction: column;
+  }
 
-    .exp h3 {
-        margin-bottom: 1rem;
-        font-size: 1.5rem;
-    }
+  .exp {
+    margin: 2.5rem 0;
+  }
 
-    /* works section */
+  .exp h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
 
-    #web-dev {
-        margin-bottom: 2rem;
-    }
+  /* works section */
 
-    #graphic-design h2, #photography h2, #web-dev h2 {
-        font-size: 3rem;
-    }
+  #web-dev {
+    margin-bottom: 2rem;
+  }
 
-    .grid {
-        width: 345px;
-        padding: 0;
-    }
+  #graphic-design h2,
+  #photography h2,
+  #web-dev h2 {
+    font-size: 3rem;
+  }
 
-    .grid-item {
-        width: 200px;
-        height: 200px;
-    }
+  .grid {
+    width: 345px;
+    padding: 0;
+  }
 
-    .grid-item img {
-        width: 200px;
-        height: 200px;
-    }
+  .grid-item {
+    width: 200px;
+    height: 200px;
+  }
+
+  .grid-item img {
+    width: 200px;
+    height: 200px;
+  }
 }
