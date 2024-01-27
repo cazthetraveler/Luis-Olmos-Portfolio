@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Roboto&family=Roboto+Condensed&display=swap');
+
+:root {
+    --black: #1c1c1c;
+    --white: #f2f2f2;
+    --purple: #ca1f7b;
+    --yellow: #ffce00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* header stuff */
+
+header {
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.title h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+nav a:hover {
+    color: var(--purple);
+}
+
+nav a::before {
+    content: "←";
+    display: inline-block; /*add this for the translation to work i guess*/
+}
+
+nav a:hover::before {
+    transform: translateX(-.5rem);
+}
+
+/* photo grid */
+
+.photo-grid {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-between;
+    height: 1500px;
+    padding: 3rem;
+    width: 60%;
+    margin: 3rem auto;
+}
+
+.photo-item {
+    width: 31%;
+    margin-bottom: 1.5rem;
+    border-radius: .3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.photo-item:nth-of-type(3n+1) {
+    order: 1;
+}
+
+.photo-item:nth-of-type(3n+2) {
+    order: 2;
+}
+
+.photo-item:nth-of-type(3n+3) {
+    order: 3;
+}
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1c1c1c2d;
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: 3rem auto;
+    padding: 3rem;
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+#close-modal-button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#close-modal-button:hover {
+    background-color: darkred;
+}
+
+.modal-header {
+    position: absolute;
+}
+
+#modal-image {
+    height: 90%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-family: monospace;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+footer a {
+    font-family: monospace;
+    color: var(--purple);
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    /* photo grid */
+    .photo-grid {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: space-between;
+        height: 1500px;
+        padding: 2rem;
+        width: 85%;
+        margin: 3rem auto;
+    }
+
+    .photo-item {
+        width: 47%;
+        border-radius: .35rem;
+        margin-bottom: .9rem;
+    }
+
+    /* modal */
+
+    .modal-header {
+        text-align: center;
+    }
+
+    #modal-image {
+        height: 70%;
+        width: auto;
+    }
+
+    .modal-content {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* header stuff */
+
+    header {
+        padding: .75rem;
+    }
+
+    .title h1 {
+        font-size: 2.25rem;
+    }
+
+    /* photo grid */
+
+    .photo-grid {
+        flex-direction: column;
+        flex-flow: row;
+        flex-wrap: wrap;
+        height: auto;
+        width: 75%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    .photo-item {
+        width: 100%;
+        border-radius: .2rem;
+        margin-bottom: .75rem;
+    }
+
+    /* modal */
+
+    .modal-header {
+        text-align: center;
+    }
+
+    #modal-image {
+        height: auto;
+        width: 70%;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    #close-modal-button {
+        border-radius: 1rem;
+        padding: .5rem 1rem;
+    }
+}
